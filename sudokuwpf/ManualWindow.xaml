@@ -1,0 +1,142 @@
+﻿<Controls:MetroWindow
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:ClassLibrary="clr-namespace:ClassLibrary;assembly=ClassLibrary" x:Name="MyManualWindow"  x:Class="SudokuWPF.ManualWindow"
+        Title="Instruction" MinHeight="700" MinWidth="758.8" Height="500" Width="800"  Visibility="Visible"               
+        BorderBrush="{DynamicResource AccentColorBrush}"
+        BorderThickness="1"
+        WindowStartupLocation="Manual" ResizeMode="NoResize">
+
+    <Grid>
+        <FlowDocumentScrollViewer>
+            <FlowDocument>
+                <Table>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell ColumnSpan="2">
+                                <Paragraph>
+                                    <Floater Width="350"  HorizontalAlignment="Right">
+                                        <BlockUIContainer>
+                                            <Image Source="Resources\1.gif"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Ігрове поле являє собою квадрат розміром 9 × 9, розділений на менші квадрати зі стороною в 3 клітини. Таким чином, 
+                    все ігрове поле складається з 81 клітини. У них вже на початку гри стоять деякі числа (від 1 до 9), звані підказками.                     
+                    На початку гри відомі деяке число цифр в певних клітинах
+
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell ColumnSpan="2">
+                                <Paragraph>
+                                    <LineBreak />
+                                    Мета судоку заповнити всі порожні клітини за допомогою цифр 1-9 ( по одній цифрі на клітину) , за такими правилами:
+                                </Paragraph>
+                                <Paragraph>
+                                    <LineBreak />
+                                    1. Цифра може з'явитися тільки один раз в кожному рядку
+                                    <Floater Width="350" Margin="18"  HorizontalAlignment="Center">
+                                        <BlockUIContainer>
+                                            <Image Source="Resources\2.gif"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                    <LineBreak />
+                                    <LineBreak />
+                                    <LineBreak />
+                                    Можна
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell ColumnSpan="2">
+                                <Paragraph>
+                                    <Floater Width="350" Margin="18" HorizontalAlignment="Center">
+                                        <BlockUIContainer>
+                                            <Image Source="Resources\3.gif"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                    <LineBreak/>
+                                    <LineBreak/>
+                                    Не можна
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell ColumnSpan="2">
+                                <Paragraph>
+                                    2. Цифра може з'явитися тільки один раз в кожному стовпчику
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Run xml:space="preserve">                                          Можна</Run>
+                                    <Floater Width="60"  HorizontalAlignment="Center">
+                                        <BlockUIContainer>
+                                            <Image Source="Resources\4.gif"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    Не можна
+                                    <Floater Width="60"  HorizontalAlignment="Left">
+                                        <BlockUIContainer>
+                                            <Image Source="Resources\5.gif"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell ColumnSpan="2">
+                                <Paragraph>
+                                    3. Цифра може з'явитися тільки один раз в кожному районі
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Run xml:space="preserve">                                          Можна</Run>
+                                    <Floater Width="200"  HorizontalAlignment="Center">
+                                        <BlockUIContainer>
+                                            <Image Source="Resources\6.gif"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <LineBreak/>
+                                    <Run xml:space="preserve">                  Не Можна</Run>
+                                    <Floater Width="200"  HorizontalAlignment="Left">
+                                        <BlockUIContainer>
+                                            <Image Source="Resources\7.gif"/>
+                                        </BlockUIContainer>
+                                    </Floater>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+
+    </Grid>
+</Controls:MetroWindow>
